@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Abdul Layeeq | AI & ML Engineer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- CANVAS BACKGROUND -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket">&lt;</span>
+      <span class="brand-name">MAL</span>
+      <span class="brand-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#interests" class="nav-link">Interests</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section class="hero" id="home">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Open to Internships & Opportunities
+      </div>
+      <h1 class="hero-name reveal">
+        MOHAMMED<br /><span class="name-accent">ABDUL LAYEEQ</span>
+      </h1>
+      <div class="hero-subtitle reveal">
+        <span class="type-text" id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-intro reveal">
+        Passionate about Artificial Intelligence, Machine Learning, and building innovative solutions using modern technologies.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Contact Me</span>
+        </a>
+        <a href="resume.pdf" class="btn btn-outline" download>
+          <i class="fas fa-download"></i>
+          <span>Resume</span>
+        </a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://www.linkedin.com/in/mohammed-abdul-layeeq-101b863b4" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/AbdulLayeeq/abdul" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:abdullayeeq958@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="profile-ring-outer">
+        <div class="profile-ring-middle">
+          <div class="profile-ring-inner">
+            <div class="profile-img-wrap">
+              <div class="profile-placeholder">
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="orbit orbit-1"><span class="orbit-dot"></span></div>
+      <div class="orbit orbit-2"><span class="orbit-dot"></span></div>
+      <div class="orbit orbit-3"><span class="orbit-dot"></span></div>
+      <div class="floating-tag tag-1"><i class="fas fa-brain"></i> AI / ML</div>
+      <div class="floating-tag tag-2"><i class="fas fa-code"></i> Python</div>
+      <div class="floating-tag tag-3"><i class="fas fa-microchip"></i> HPC</div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">01 — About</div>
+      <h2 class="section-title reveal">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-bio">
+            A passionate and motivated Computer Science and Engineering (AI & ML specialization) pre-final year student with a strong interest in Artificial Intelligence, Machine Learning, and data-driven problem solving.
+          </p>
+          <p class="about-bio">
+            Skilled in building intelligent models, understanding real-world datasets, and applying AI/ML concepts to practical applications. Actively learning modern AI technologies and frameworks, with a keen interest in research, innovation, and continuous upskilling.
+          </p>
+          <p class="about-bio">
+            Seeking opportunities to gain hands-on experience and contribute to impactful AI-driven projects.
+          </p>
+          <div class="about-edu">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <div class="edu-univ">SR University</div>
+              <div class="edu-deg">B.Tech — CSE (AI & ML)</div>
+              <div class="edu-year">2023 – 2027</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-num" data-target="5">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="6">0</div>
+            <div class="stat-label">Technical Skills</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="4">0</div>
+            <div class="stat-label">Technologies Learning</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="2">0</div>
+            <div class="stat-label">Academic Years</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">02 — Skills</div>
+      <h2 class="section-title reveal">What I Work With</h2>
+      <div class="skills-grid">
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">Technical</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><i class="devicon-c-plain skill-icon-lang"></i> C Language</span>
+              <span class="skill-pct">72%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-python skill-icon-lang"></i> Python</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fab fa-java skill-icon-lang"></i> Java</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+        </div>
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">Professional</h3>
+          <div class="pro-skills">
+            <div class="pro-skill-card">
+              <div class="pro-skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <div class="pro-skill-name">Problem Solving</div>
+            </div>
+            <div class="pro-skill-card">
+              <div class="pro-skill-icon"><i class="fas fa-sitemap"></i></div>
+              <div class="pro-skill-name">Organization Management</div>
+            </div>
+            <div class="pro-skill-card">
+              <div class="pro-skill-icon"><i class="fas fa-comments"></i></div>
+              <div class="pro-skill-name">Good Communication</div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">Learning</h3>
+          <div class="tech-tags">
+            <span class="tech-tag"><i class="fas fa-brain"></i> Machine Learning</span>
+            <span class="tech-tag"><i class="fas fa-network-wired"></i> Deep Learning</span>
+            <span class="tech-tag"><i class="fas fa-database"></i> Data Analysis</span>
+            <span class="tech-tag"><i class="fas fa-microchip"></i> OpenMP / HPC</span>
+            <span class="tech-tag"><i class="fas fa-chart-line"></i> Data Visualization</span>
+            <span class="tech-tag"><i class="fas fa-robot"></i> AI Frameworks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">03 — Projects</div>
+      <h2 class="section-title reveal">Featured Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-color="#00d4ff">
+          <div class="project-num">01</div>
+          <div class="project-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <h3 class="project-title">Performance Analysis of Matrix Multiplication</h3>
+          <p class="project-desc">Analysis of parallel computing performance using OpenMP and Python. Focuses on high-performance computing concepts and matrix computation optimization at scale.</p>
+          <div class="project-tags">
+            <span>OpenMP</span><span>Python</span><span>HPC</span><span>Parallel Computing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdulLayeeq/abdul" target="_blank" class="project-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="project-card reveal" data-color="#7c3aed">
+          <div class="project-num">02</div>
+          <div class="project-icon"><i class="fas fa-drone-alt"></i></div>
+          <h3 class="project-title">Medical Drone Project</h3>
+          <p class="project-desc">AI-powered healthcare drone for emergency response and medical assistance. Integrates automation, smart routing, and real-time monitoring for rapid healthcare delivery.</p>
+          <div class="project-tags">
+            <span>AI</span><span>Automation</span><span>Healthcare</span><span>IoT</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdulLayeeq/abdul" target="_blank" class="project-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="project-card reveal" data-color="#06b6d4">
+          <div class="project-num">03</div>
+          <div class="project-icon"><i class="fas fa-calendar-check"></i></div>
+          <h3 class="project-title">Digital Booking System</h3>
+          <p class="project-desc">A smart online booking and management platform with an intuitive UI, robust database handling, and user-friendly functionality for seamless scheduling.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Database</span><span>UI Design</span><span>Web</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdulLayeeq/abdul" target="_blank" class="project-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="project-card reveal" data-color="#10b981">
+          <div class="project-num">04</div>
+          <div class="project-icon"><i class="fas fa-smog"></i></div>
+          <h3 class="project-title">Ozone Level Detection</h3>
+          <p class="project-desc">Environmental monitoring system using data analysis and sensor integration to detect and visualize atmospheric ozone levels for pollution awareness and analysis.</p>
+          <div class="project-tags">
+            <span>Data Analysis</span><span>Python</span><span>Sensors</span><span>Environment</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdulLayeeq/abdul" target="_blank" class="project-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="project-card reveal" data-color="#f59e0b">
+          <div class="project-num">05</div>
+          <div class="project-icon"><i class="fas fa-water"></i></div>
+          <h3 class="project-title">Water Pollution Study</h3>
+          <p class="project-desc">Research study on water pollution caused by improper solid waste disposal near water bodies. Includes sustainability analysis, environmental impact assessment, and policy recommendations.</p>
+          <div class="project-tags">
+            <span>Research</span><span>Sustainability</span><span>Data</span><span>Environment</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AbdulLayeeq/abdul" target="_blank" class="project-btn">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">04 — Experience</div>
+      <h2 class="section-title reveal">Journey So Far</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2023 – Present</div>
+            <h3 class="timeline-title">B.Tech — CSE (AI & ML)</h3>
+            <p class="timeline-org">SR University, Warangal</p>
+            <p class="timeline-desc">Pre-final year student building a strong foundation in AI, ML, Data Structures, Algorithms, and Software Engineering. Actively working on real-world projects and research initiatives.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content fresher-card">
+            <div class="fresher-badge"><i class="fas fa-rocket"></i> Actively Seeking</div>
+            <h3 class="timeline-title">Internship & Industry Opportunities</h3>
+            <p class="timeline-desc">Fresher with strong academic background and project experience. Ready to contribute to AI/ML teams and industry projects.</p>
+            <div class="trait-pills">
+              <span><i class="fas fa-bolt"></i> Fast Learner</span>
+              <span><i class="fas fa-brain"></i> AI/ML Enthusiast</span>
+              <span><i class="fas fa-users"></i> Team Player</span>
+              <span><i class="fas fa-flask"></i> Research Interest</span>
+              <span><i class="fas fa-sync-alt"></i> Adaptable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERESTS ===== -->
+  <section class="interests section" id="interests">
+    <div class="container">
+      <div class="section-label reveal">05 — Interests</div>
+      <h2 class="section-title reveal">Areas of Interest</h2>
+      <div class="interests-grid">
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fas fa-brain"></i></div>
+          <h3>Artificial Intelligence</h3>
+          <p>Exploring intelligent systems, reasoning engines, and next-gen AI architectures.</p>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Machine Learning</h3>
+          <p>Building predictive models, neural networks, and data-driven decision systems.</p>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Data Analysis</h3>
+          <p>Extracting insights from complex datasets using statistical and visual techniques.</p>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fas fa-flask"></i></div>
+          <h3>Research & Innovation</h3>
+          <p>Conducting academic and applied research to push boundaries of current technology.</p>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fas fa-microchip"></i></div>
+          <h3>High Performance Computing</h3>
+          <p>Leveraging parallel architectures and optimized algorithms for compute-intensive tasks.</p>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fas fa-robot"></i></div>
+          <h3>Smart Automation</h3>
+          <p>Designing intelligent systems that automate processes and improve efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">06 — Contact</div>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">Open to internships, collaborations, and exciting opportunities in AI/ML. Let's build something amazing together.</p>
+          <div class="contact-items">
+            <a href="mailto:abdullayeeq958@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-val">abdullayeeq958@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:7995082810" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="contact-item-label">Phone</div>
+                <div class="contact-item-val">+91 7995082810</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/mohammed-abdul-layeeq-101b863b4" target="_blank" class="contact-item">
+              <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-val">mohammed-abdul-layeeq</div>
+              </div>
+            </a>
+            <a href="https://github.com/AbdulLayeeq/abdul" target="_blank" class="contact-item">
+              <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-val">AbdulLayeeq/abdul</div>
+              </div>
+            </a>
+            <div class="contact-item no-hover">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-item-label">Location</div>
+                <div class="contact-item-val">Alipura, Subedari, Warangal – 506002, Telangana, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required class="form-input" />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required class="form-input" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" class="form-input" />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required class="form-input"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div id="form-success" class="form-success hidden">
+              <i class="fas fa-check-circle"></i> Message sent successfully!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-bracket">&lt;</span>
+          <span class="brand-name">MAL</span>
+          <span class="brand-bracket">/&gt;</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/mohammed-abdul-layeeq-101b863b4" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/AbdulLayeeq/abdul" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:abdullayeeq958@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <div class="footer-tagline">"Building Intelligent Solutions for a Smarter Future."</div>
+        <div class="footer-copy">© 2024 Mohammed Abdul Layeeq. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/neural.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

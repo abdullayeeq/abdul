@@ -1,0 +1,140 @@
+/* ===================================
+   animations.css — Scroll reveal & transitions
+=================================== */
+
+/* ---------- REVEAL ON SCROLL ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1),
+              transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+.about-stats .stat-card:nth-child(1) { transition-delay: 0.05s; }
+.about-stats .stat-card:nth-child(2) { transition-delay: 0.15s; }
+.about-stats .stat-card:nth-child(3) { transition-delay: 0.25s; }
+.about-stats .stat-card:nth-child(4) { transition-delay: 0.35s; }
+
+.projects-grid .project-card:nth-child(1) { transition-delay: 0s; }
+.projects-grid .project-card:nth-child(2) { transition-delay: 0.1s; }
+.projects-grid .project-card:nth-child(3) { transition-delay: 0.2s; }
+.projects-grid .project-card:nth-child(4) { transition-delay: 0.1s; }
+.projects-grid .project-card:nth-child(5) { transition-delay: 0.2s; }
+
+.interests-grid .interest-card:nth-child(1) { transition-delay: 0s; }
+.interests-grid .interest-card:nth-child(2) { transition-delay: 0.08s; }
+.interests-grid .interest-card:nth-child(3) { transition-delay: 0.16s; }
+.interests-grid .interest-card:nth-child(4) { transition-delay: 0.24s; }
+.interests-grid .interest-card:nth-child(5) { transition-delay: 0.32s; }
+.interests-grid .interest-card:nth-child(6) { transition-delay: 0.4s; }
+
+.skills-grid .skills-col:nth-child(1) { transition-delay: 0s; }
+.skills-grid .skills-col:nth-child(2) { transition-delay: 0.12s; }
+.skills-grid .skills-col:nth-child(3) { transition-delay: 0.24s; }
+
+.timeline-item:nth-child(1) { transition-delay: 0s; }
+.timeline-item:nth-child(2) { transition-delay: 0.2s; }
+
+/* ---------- PAGE LOADER ---------- */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.page-loader.done { opacity: 0; visibility: hidden; }
+.loader-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #00d4ff;
+  letter-spacing: -1px;
+}
+.loader-bar-track {
+  width: 200px;
+  height: 2px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.loader-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #00d4ff);
+  border-radius: 2px;
+  width: 0;
+  animation: loader-progress 1.2s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+@keyframes loader-progress {
+  0%   { width: 0; }
+  60%  { width: 75%; }
+  100% { width: 100%; }
+}
+
+/* ---------- GRADIENT BACKGROUND BLOBS ---------- */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -100px;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -100px; left: -150px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(124,58,237,0.07) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+.projects::before {
+  content: '';
+  position: absolute;
+  top: 50%; right: -200px;
+  transform: translateY(-50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(0,212,255,0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.interests::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -150px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(124,58,237,0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---------- HOVER GLOW EFFECTS ---------- */
+.project-card:hover {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.15);
+}
+.stat-card:hover {
+  box-shadow: 0 0 40px rgba(0,212,255,0.12);
+}
+
+/* ---------- NAV ACTIVE INDICATOR ---------- */
+.nav-link {
+  position: relative;
+}
+
+/* ---------- SECTION ENTRANCE ---------- */
+@keyframes section-enter {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
