@@ -193,3 +193,29 @@
   }, 1500);
 
 })();
+
+/* -------- CERTIFICATE FILTER -------- */
+(function() {
+  const filterBtns = document.querySelectorAll('.cert-btn');
+  const certCards  = document.querySelectorAll('.cert-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      certCards.forEach(card => {
+        const cat = card.dataset.category;
+        if (filter === 'all' || cat === filter) {
+          card.style.display = '';
+          card.classList.remove('hidden-cert');
+          // re-trigger reveal animation
+          setTimeout(() => card.classList.add('visible'), 30);
+        } else {
+          card.classList.add('hidden-cert');
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
